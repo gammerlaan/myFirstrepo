@@ -2,6 +2,7 @@
 using namespace std;
 
 const int SUCCESS{0};
+const int FAILURE{13};
 
 int main()
 {
@@ -11,7 +12,7 @@ int main()
     try{
     cout << "You membah? Yeah I membah!" << endl;
     cin >> answer;
-    if (answer==0){throw 99;}
+    if (answer==0){throw FAILURE;}
     }
     catch(int x){cout << "I no longah membah " << x << endl;
     return x;}
